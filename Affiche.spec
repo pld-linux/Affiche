@@ -2,7 +2,7 @@ Summary:	Application allowing to "stick little notes" on desktop
 Summary(pl):	Aplikacja pozwalaj±ca przyklejaæ ma³e notatki na pulpicie
 Name:		Affiche
 Version:	0.6.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.collaboration-world.com/affiche.data/releases/Stable/%{name}-%{version}.tar.gz
