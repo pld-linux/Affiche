@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.gnustep.org/pub/gnustep/usr-apps/%{name}-%{version}.tar.gz
 # Source0-md5:	5052e59981e7f1df3e8e6d995f74110c
+URL:		http://www.collaboration-world.com/affiche/
 BuildRequires:	gnustep-extensions-devel
 BuildRequires:	gnustep-gui-devel
 Requires:	gnustep-gui
