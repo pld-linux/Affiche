@@ -1,12 +1,12 @@
 Summary:	Application allowing to "stick little notes" on desktop
 Summary(pl):	Aplikacja pozwalaj±ca przyklejaæ ma³e notatki na pulpicie
 Name:		Affiche
-Version:	0.3.0
+Version:	0.6.0
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.gnustep.org/pub/gnustep/usr-apps/%{name}-%{version}.tar.gz
-# Source0-md5:	5052e59981e7f1df3e8e6d995f74110c
+Source0:	http://www.collaboration-world.com/affiche.data/releases/Stable/%{name}-%{version}.tar.gz
+# Source0-md5:	6c7ad52544579594b20ca7c86954042e
 URL:		http://www.collaboration-world.com/affiche/
 BuildRequires:	gnustep-extensions-devel
 BuildRequires:	gnustep-gui-devel
@@ -61,6 +61,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/System/Applications/Affiche.app/Resources/*.plist
 %{_prefix}/System/Applications/Affiche.app/Resources/*.tiff
 %{_prefix}/System/Applications/Affiche.app/Resources/English.lproj
+%lang(fr) %{_prefix}/System/Applications/Affiche.app/Resources/French.lproj
+%lang(de) %{_prefix}/System/Applications/Affiche.app/Resources/German.lproj
+# which language???
+#%lang(??) %{_prefix}/System/Applications/Affiche.app/Resources/Lojban.lproj
+%lang(es) %{_prefix}/System/Applications/Affiche.app/Resources/Spanish.lproj
+%lang(sv) %{_prefix}/System/Applications/Affiche.app/Resources/Swedish.lproj
 %dir %{_prefix}/System/Applications/Affiche.app/%{gscpu}
 %dir %{_prefix}/System/Applications/Affiche.app/%{gscpu}/%{gsos}
 %dir %{_prefix}/System/Applications/Affiche.app/%{gscpu}/%{gsos}/%{libcombo}
