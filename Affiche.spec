@@ -8,7 +8,6 @@ Group:		X11/Applications
 Source0:	http://www.collaboration-world.com/affiche.data/releases/Stable/%{name}-%{version}.tar.gz
 # Source0-md5:	6c7ad52544579594b20ca7c86954042e
 URL:		http://www.collaboration-world.com/affiche/
-BuildRequires:	gnustep-extensions-devel
 BuildRequires:	gnustep-gui-devel
 Requires:	gnustep-gui
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
