@@ -2,7 +2,7 @@ Summary:	Application allowing to "stick little notes" on desktop
 Summary(pl):	Aplikacja pozwalaj±ca przyklejaæ ma³e notatki na pulpicie
 Name:		Affiche
 Version:	0.6.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.collaboration-world.com/affiche.data/releases/Stable/%{name}-%{version}.tar.gz
@@ -12,7 +12,7 @@ BuildRequires:	gnustep-gui-devel
 Requires:	gnustep-gui
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _prefix         /usr/lib/GNUstep
+%define         _prefix         /usr/%{_lib}/GNUstep
 
 %define		libcombo	gnu-gnu-gnu
 %define		gsos		linux-gnu
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		gscpu		ix86
 %else
 # also s/alpha.*/alpha/, but we use only "alpha" arch for now
-%define		gscpu		%{_target_cpu}
+%define		gscpu		%(echo %{_target_cpu} | sed -e 's/amd64/x86_64/;s/ppc/powerpc/')
 %endif
 
 %description
@@ -62,8 +62,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/System/Applications/Affiche.app/Resources/English.lproj
 %lang(fr) %{_prefix}/System/Applications/Affiche.app/Resources/French.lproj
 %lang(de) %{_prefix}/System/Applications/Affiche.app/Resources/German.lproj
-# which language???
-#%lang(??) %{_prefix}/System/Applications/Affiche.app/Resources/Lojban.lproj
+# ISO-639-2 (not in 639-1)
+%lang(art-lojban) %{_prefix}/System/Applications/Affiche.app/Resources/Lojban.lproj
 %lang(es) %{_prefix}/System/Applications/Affiche.app/Resources/Spanish.lproj
 %lang(sv) %{_prefix}/System/Applications/Affiche.app/Resources/Swedish.lproj
 %dir %{_prefix}/System/Applications/Affiche.app/%{gscpu}
