@@ -1,5 +1,5 @@
 Summary:	Application allowing to "stick little notes" on desktop
-Summary(pl.UTF-8):   Aplikacja pozwalająca przyklejać małe notatki na pulpicie
+Summary(pl.UTF-8):	Aplikacja pozwalająca przyklejać małe notatki na pulpicie
 Name:		Affiche
 Version:	0.6.0
 Release:	4
