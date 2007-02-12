@@ -1,5 +1,5 @@
 Summary:	Application allowing to "stick little notes" on desktop
-Summary(pl):	Aplikacja pozwalaj±ca przyklejaæ ma³e notatki na pulpicie
+Summary(pl.UTF-8):   Aplikacja pozwalajÄ…ca przyklejaÄ‡ maÅ‚e notatki na pulpicie
 Name:		Affiche
 Version:	0.6.0
 Release:	4
@@ -27,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Affiche is a little application that allows people to 'stick little
 notes' on your desktop.
 
-%description -l pl
-Affiche to ma³a aplikacja pozwalaj±ca u¿ytkownikom przyklejaæ ma³e
+%description -l pl.UTF-8
+Affiche to maÅ‚a aplikacja pozwalajÄ…ca uÅ¼ytkownikom przyklejaÄ‡ maÅ‚e
 notatki na pulpicie.
 
 %prep
